@@ -1,2 +1,6 @@
-# frontend-FanPage
-Exercice en groupe de 3 qui consiste à développer une fake FanPage en frontend lors de ma formation à Becode
+# frontend-fanPage
+
+Exercice avec le même groupe de trois qui consiste à faire une fausse FanPage d'un personnage de fiction.
+Ici on a choisi le Joker (Batman).
+
+[Visualiser](https://thankuniverse.github.io/frontend-FanPage/html/index.html)

@@ -1,0 +1,231 @@
+/*JOKER FANSITE
+=================
+CONTACT
+=================
+Background
+=================*/
+.indexBg {
+    display: fixed;
+    background-color: black;
+}
+
+/*===============
+Nav Bar
+=================*/
+#sideNav a {
+    position: absolute; /* Position them relative to the browser window */
+    left: -80px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 180px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-family: 'Bangers', cursive;
+    font-size: 20px; /* Increase font size */
+    text-align: right;
+    color: white; /* White text color */
+    border-radius: 0 30px 30px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+#sideNav a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+    box-shadow: 0px 0px 25px #B02BCF; /* On mouse-over, a shadow appear around the element*/
+/*animation halo on hover*/
+    animation-name: halOpacity;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+/*========
+Animation sideNav
+==========*/
+@keyframes halOpacity {
+   0%       {box-shadow: 0px 0px 25px purple;}
+   50%      {box-shadow: 0px 0px 5px purple;}
+   100%     {box-shadow: 0px 0px 25px purple;}
+}
+
+
+/* The about link: 20px from the top with a green background */
+#home {
+    top: 30px;
+    background-color: #141414;
+
+}
+#biography {
+    top: 100px;
+    background-color: #141414;
+}
+
+#presentation {
+    top: 170px;
+    background-color: #141414;
+}
+
+#photography {
+    top: 240px;
+    background-color: #141414;
+}
+
+#goodies {
+    top: 310px;
+    background-color: #141414;
+}
+
+#contact {
+    top: 380px;
+    background-color: #141414;
+}
+/* effet noir gradient sur nav bar à gauche*/
+#gradient {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  height: 100%;
+  z-index: -5;
+}
+/* BACKGROUND */
+.contact img {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: -10;
+}
+/* BULLE IMAGE */
+.bulleImage img {
+  position: absolute;
+  width: 620px;
+  height: 550px;
+  top: 45px;
+  left: 520px;
+  opacity: 0.4;
+}
+/* TEXT dans la bulle */
+ .bulleText  {
+  position: absolute;
+  top: 60px;
+  left: 685px;
+  z-index: 10;
+  width: auto;
+  height: auto;
+  font-family: "Bangers", sans-serif;
+  font-size: 15px;
+  text-align: left;
+  padding-left: 30px;
+  padding-top: 8px;
+  color: white;
+
+}
+/* Formulaire */
+.formContact {
+  display: flex;
+  flex-direction: column;
+  }
+  .formContact input {
+    border-radius: 5%;
+    border: 1px black solid;
+  }
+  #btn-contact {
+    background-color: #19FF5A;
+    border-radius: 5%;
+    border: darkgreen 2px solid;
+    padding: 5px;
+    padding-left: 170px;
+    padding-right: 170px;
+    margin: 5px;
+    font-family: "Bangers", sans-serif;
+    color: white;
+    font-size: 20px;
+  }
+  #btn-contact:hover {
+    box-shadow: 0px 0px 25px #19FF5A;
+  }
+  .boutton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+#message {
+  height:60px;
+}
+#navBarResponsive {
+  display: none;
+}
+
+/*==============================================================================*/
+
+/*==================
+FOOTER
+====================*/
+
+footer {
+    background-color: black;
+    font-family: "Open", sans-serif;
+    font-size: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: gray;
+    text-decoration: none;
+    text-align: left;
+}
+footer a {
+    margin: 0 20px;
+    bottom: 20px;
+    background-color: black;
+    color: gray;
+    text-decoration: none;
+}
+/* MEDIA QUERIES */
+@media (max-width: 1157px){
+  .bulleImage img {
+    display: none;
+  }
+  .bulleText {
+    position: fixed;
+    top: 350px;
+    left: 0px;
+    background-color: rgba(225,255,255,0.7);
+    width: 400px;
+    height: auto;
+  }
+  .bulleText p {
+    display: none;
+  }
+
+  #gradient {
+  display: none;
+}
+  #background{
+  opacity: 1;
+}
+  #navBarResponsive {
+  display: block;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-left: 15px;
+  text-align: center;
+  z-index: 20;
+  background-color: rgba(0,0,0,0.7);
+}
+  #navBarResponsive a {
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Bangers", sans-serif;
+  color:  #19FF5A;
+  padding: 5px;
+  margin: 5px;
+  background-color: Transparent;
+}
+#navBarResponsive a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+    box-shadow: 0px 0px 25px #19FF5A; /* On mouse-over, a shadow */
+}
+  #sideNav {
+  display: none;
+}
+}
